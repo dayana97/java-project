@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class vowelsSum {
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+
+        String input = console.next();
+        int sum = 0;
+
+        for (int i = 0; i < input.length(); i++){
+                char letter = input.charAt(i);
+                switch (letter){
+                    case 'a':
+                        sum += 1;
+                    case 'e' :
+                        sum += 2;
+                    case 'i':
+                        sum += 3;
+                    case 'o':
+                        sum +=4;
+                    case 'u':
+                        sum +=5;
+
+                        break;
+                }
+        }
+        System.out.println(sum);
+    }
+}

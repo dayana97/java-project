@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class MaxNumbers {
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+        int n = Integer.parseInt(console.nextLine());
+
+         int biggest = Integer.MIN_VALUE;
+
+         for (int i = 1; i <= n; i++){
+             int current = Integer.parseInt(console.nextLine());
+
+             if (current > biggest){
+                 biggest = current;
+             }
+         }
+        System.out.println(biggest);
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class p07_totalSeconds {
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+        int firstPlayerSeconds = Integer.parseInt(console.nextLine());
+        int secondPlayerSeconds = Integer.parseInt(console.nextLine());
+        int thirdPlayerSeconds = Integer.parseInt(console.nextLine());
+        int totalSeconds = firstPlayerSeconds +secondPlayerSeconds +thirdPlayerSeconds;
+
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds % 60;
+        System.out.printf("%d:%02d" , minutes, seconds);
+
+    }
+}
