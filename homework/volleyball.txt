@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class voleyball {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String typeOfYear = scanner.nextLine();
+        int holidays = Integer.parseInt(scanner.nextLine());
+        int weekendsAway = Integer.parseInt(scanner.nextLine());
+
+        int weekendsInSofia = 48 - weekendsAway;
+
+        double gamesAndWeekends = weekendsInSofia*3.0/4;
+        double gamesInHolidays = holidays *2.0/3;
+
+        double games=gamesAndWeekends + weekendsAway+ gamesInHolidays;
+
+        if(typeOfYear.equals("leap")){
+            games = games +0.15*games;
+        }
+        System.out.printf("%.0f", Math.floor(games));
+
+
+    }
+}
